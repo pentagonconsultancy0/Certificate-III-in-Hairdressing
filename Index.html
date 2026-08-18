@@ -1,0 +1,670 @@
+<!DOCTYPE html>
+<html lang="en-AU">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Certificate III in Hairdressing | Start Your Hairdressing Career</title>
+<meta name="description" content="Learn how to become a hairdresser with Certificate III in Hairdressing. Build practical skills and prepare for a rewarding career in the industry.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=Work+Sans:wght@400;500;600&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --ink:#221B1D;
+    --paper:#F7F1E8;
+    --wine:#6E2439;
+    --wine-dark:#4E1727;
+    --brass:#B98A46;
+    --blush:#EFDCD8;
+    --blush-2:#F5E9E5;
+    --line: rgba(34,27,29,0.14);
+  }
+  *{box-sizing:border-box;}
+  html{scroll-behavior:smooth;}
+  body{
+    margin:0;
+    background:var(--paper);
+    color:var(--ink);
+    font-family:'Work Sans', sans-serif;
+    font-size:17px;
+    line-height:1.65;
+  }
+  h1,h2,h3{
+    font-family:'Fraunces', serif;
+    font-weight:600;
+    margin:0 0 0.6em;
+    color:var(--ink);
+  }
+  a{color:var(--wine);}
+  p{margin:0 0 1em;}
+  .eyebrow{
+    font-family:'Space Mono', monospace;
+    text-transform:uppercase;
+    letter-spacing:0.14em;
+    font-size:0.75rem;
+    color:var(--wine);
+    display:flex;
+    align-items:center;
+    gap:10px;
+    margin-bottom:14px;
+  }
+  .eyebrow::before{
+    content:"";
+    width:22px;
+    height:1px;
+    background:var(--wine);
+    display:inline-block;
+  }
+  .wrap{
+    max-width:1080px;
+    margin:0 auto;
+    padding:0 28px;
+  }
+  section{padding:76px 0;}
+
+  /* snip divider - references a zigzag cut line, like scissors along fabric */
+  .cut-divider{
+    width:100%;
+    height:14px;
+    display:block;
+  }
+
+  /* HERO */
+  .hero{
+    background: linear-gradient(180deg, var(--ink) 0%, var(--wine-dark) 100%);
+    color:#F4EAE3;
+    padding:0;
+    overflow:hidden;
+  }
+  .hero-inner{
+    display:grid;
+    grid-template-columns: 1.05fr 0.95fr;
+    align-items:center;
+    gap:48px;
+    max-width:1080px;
+    margin:0 auto;
+    padding:88px 28px 0;
+  }
+  .hero .eyebrow{color:var(--brass);}
+  .hero .eyebrow::before{background:var(--brass);}
+  .hero h1{
+    font-size:clamp(2.2rem, 4.6vw, 3.4rem);
+    color:#FBF6F0;
+    line-height:1.08;
+    margin-bottom:0.5em;
+  }
+  .hero p.lede{
+    font-size:1.1rem;
+    color:#E7D9D1;
+    max-width:48ch;
+  }
+  .hero-meta{
+    display:flex;
+    gap:26px;
+    margin-top:30px;
+    flex-wrap:wrap;
+    font-family:'Space Mono', monospace;
+    font-size:0.8rem;
+    color:#D8C4BA;
+  }
+  .hero-meta div{border-left:1px solid rgba(244,234,227,0.25); padding-left:14px;}
+  .hero-meta b{display:block; color:#FBF6F0; font-size:1rem; font-family:'Fraunces',serif; font-weight:600; margin-bottom:2px;}
+  .hero-image-frame{
+    position:relative;
+    padding-bottom:0;
+  }
+  .hero-image-frame img{
+    width:100%;
+    height:420px;
+    object-fit:cover;
+    border-radius:6px 6px 0 0;
+    display:block;
+    filter:saturate(0.96) contrast(1.02);
+  }
+  .swatch-strip{
+    height:10px;
+    display:flex;
+  }
+  .swatch-strip span{flex:1;}
+  .s1{background:var(--wine);}
+  .s2{background:var(--brass);}
+  .s3{background:var(--blush);}
+  .s4{background:#3A2A2E;}
+
+  /* GENERAL SECTION STYLES */
+  .section-alt{background:#FBF6F0;}
+  .grid-2{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    gap:56px;
+    align-items:start;
+  }
+  .card{
+    background:#FFFFFF;
+    border:1px solid var(--line);
+    border-radius:4px;
+    padding:26px 24px;
+  }
+  .card-list{
+    display:grid;
+    gap:16px;
+  }
+  .tag{
+    font-family:'Space Mono', monospace;
+    font-size:0.72rem;
+    color:var(--wine-dark);
+    background:var(--blush);
+    display:inline-block;
+    padding:3px 10px;
+    border-radius:2px;
+    letter-spacing:0.04em;
+  }
+
+  /* NUMBERED STEPS - How to become a hairdresser */
+  .steps{
+    display:grid;
+    gap:0;
+    counter-reset:step;
+    margin-top:10px;
+  }
+  .step{
+    display:grid;
+    grid-template-columns:64px 1fr;
+    gap:22px;
+    padding:26px 0;
+    border-top:1px solid var(--line);
+  }
+  .step:last-child{border-bottom:1px solid var(--line);}
+  .step-num{
+    font-family:'Fraunces', serif;
+    font-size:2rem;
+    font-weight:600;
+    color:var(--brass);
+  }
+  .step h3{margin-bottom:6px; font-size:1.15rem;}
+
+  /* THREE COLUMN FEATURE GRID */
+  .grid-3{
+    display:grid;
+    grid-template-columns:repeat(3, 1fr);
+    gap:24px;
+  }
+  .feature{
+    border-top:3px solid var(--wine);
+    padding-top:16px;
+  }
+  .feature h3{font-size:1.08rem; margin-bottom:8px;}
+  .feature p{color:#43393B; font-size:0.98rem; margin:0;}
+
+  /* SKILLS LIST with chip markers */
+  .skill-grid{
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:14px;
+    margin-top:8px;
+  }
+  .skill-chip{
+    display:flex;
+    align-items:flex-start;
+    gap:12px;
+    background:#FFFFFF;
+    border:1px solid var(--line);
+    border-radius:4px;
+    padding:16px 18px;
+  }
+  .skill-dot{
+    width:10px;height:10px;border-radius:50%;
+    background:var(--wine);
+    margin-top:6px;
+    flex-shrink:0;
+  }
+  .skill-chip h3{font-size:1rem; margin-bottom:4px;}
+  .skill-chip p{font-size:0.92rem; color:#43393B; margin:0;}
+
+  /* MID IMAGE BAND */
+  .mid-image{
+    position:relative;
+  }
+  .mid-image img{
+    width:100%;
+    height:380px;
+    object-fit:cover;
+    display:block;
+  }
+  .mid-caption{
+    background:var(--ink);
+    color:#EFE3DB;
+    font-family:'Space Mono', monospace;
+    font-size:0.78rem;
+    padding:12px 28px;
+    letter-spacing:0.03em;
+  }
+
+  /* CAREER LIST */
+  .career-row{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:18px 0;
+    border-top:1px solid var(--line);
+    gap:20px;
+  }
+  .career-row:last-child{border-bottom:1px solid var(--line);}
+  .career-row span.role{font-family:'Fraunces',serif; font-weight:600; font-size:1.05rem;}
+  .career-row span.desc{color:#5A4E50; font-size:0.92rem; text-align:right; max-width:48%;}
+
+  /* WHO CAN ENROL */
+  .enrol-grid{
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:18px;
+  }
+  .enrol-item{
+    background:var(--blush-2);
+    border-radius:4px;
+    padding:20px 22px;
+  }
+  .enrol-item h3{font-size:1rem; margin-bottom:6px;}
+  .enrol-item p{font-size:0.92rem; color:#4C3F41; margin:0;}
+
+  /* WHY CHOOSE US */
+  .why-grid{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:20px;
+  }
+  .why-item{text-align:left;}
+  .why-num{
+    font-family:'Fraunces',serif;
+    font-size:1.6rem;
+    font-weight:600;
+    color:var(--wine);
+    margin-bottom:6px;
+  }
+  .why-item h3{font-size:0.98rem; margin-bottom:6px;}
+  .why-item p{font-size:0.9rem; color:#43393B; margin:0;}
+
+  /* FAQ */
+  .faq-item{
+    border-top:1px solid var(--line);
+    padding:20px 0;
+  }
+  .faq-item:last-child{border-bottom:1px solid var(--line);}
+  .faq-item summary{
+    cursor:pointer;
+    font-family:'Fraunces', serif;
+    font-weight:600;
+    font-size:1.05rem;
+    list-style:none;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+  }
+  .faq-item summary::-webkit-details-marker{display:none;}
+  .faq-item summary::after{
+    content:"+";
+    font-family:'Space Mono', monospace;
+    font-size:1.2rem;
+    color:var(--wine);
+    margin-left:16px;
+  }
+  .faq-item[open] summary::after{content:"–";}
+  .faq-item p{margin-top:12px; color:#43393B; font-size:0.97rem;}
+
+  /* CONTACT */
+  .contact{
+    background: linear-gradient(180deg, var(--wine-dark) 0%, var(--ink) 100%);
+    color:#F4EAE3;
+  }
+  .contact h2{color:#FBF6F0;}
+  .contact p.lede{color:#E7D9D1; max-width:56ch;}
+  .contact-grid{
+    display:grid;
+    grid-template-columns:1.2fr 1fr;
+    gap:48px;
+    align-items:start;
+  }
+  .contact-details{
+    display:grid;
+    gap:18px;
+    margin-top:8px;
+  }
+  .contact-details div{
+    border-left:2px solid var(--brass);
+    padding-left:16px;
+  }
+  .contact-details b{
+    display:block;
+    font-family:'Space Mono', monospace;
+    font-size:0.72rem;
+    letter-spacing:0.08em;
+    text-transform:uppercase;
+    color:var(--brass);
+    margin-bottom:4px;
+  }
+  .contact-details a{color:#F4EAE3; text-decoration:underline;}
+  .cta-btn{
+    display:inline-block;
+    background:var(--brass);
+    color:var(--ink);
+    font-family:'Space Mono', monospace;
+    font-weight:700;
+    font-size:0.9rem;
+    letter-spacing:0.03em;
+    text-decoration:none;
+    padding:16px 30px;
+    border-radius:2px;
+    margin-top:28px;
+  }
+  .cta-btn:hover{background:#CFA365;}
+
+  footer{
+    background:var(--ink);
+    color:#9C8B85;
+    font-size:0.82rem;
+    text-align:center;
+    padding:26px 20px;
+  }
+
+  /* SITE HEADER */
+  .site-header{
+    background:#FFFFFF;
+    border-bottom:1px solid var(--line);
+    padding:14px 0;
+  }
+  .site-header .wrap{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+  }
+  .site-header img{
+    height:48px;
+    width:auto;
+    display:block;
+  }
+  .site-header a.cta-btn{
+    margin-top:0;
+    padding:10px 22px;
+    font-size:0.78rem;
+  }
+
+  @media (max-width: 860px){
+    .hero-inner{grid-template-columns:1fr; padding-top:56px;}
+    .hero-image-frame img{height:280px;}
+    .grid-2{grid-template-columns:1fr; gap:32px;}
+    .grid-3{grid-template-columns:1fr;}
+    .skill-grid{grid-template-columns:1fr;}
+    .enrol-grid{grid-template-columns:1fr;}
+    .why-grid{grid-template-columns:repeat(2,1fr);}
+    .contact-grid{grid-template-columns:1fr;}
+    .career-row{flex-direction:column; align-items:flex-start;}
+    .career-row span.desc{text-align:left; max-width:100%;}
+    section{padding:52px 0;}
+  }
+
+  @media (max-width: 560px){
+    .site-header a.cta-btn{display:none;}
+  }
+</style>
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap">
+    <img src="pentagon-consultancy-logo.jpg" alt="Pentagon Consultancy — Services You Can Trust">
+  </div>
+</header>
+
+<div class="hero">
+  <div class="hero-inner">
+    <div>
+      <div class="eyebrow">Nationally recognised training</div>
+      <h1>Become a Qualified Hairdresser with Certificate III in Hairdressing</h1>
+      <p class="lede">Learn to cut, colour and style hair the right way. This course takes you from the basics of the salon floor to the skills real employers are looking for.</p>
+    </div>
+    <div class="hero-image-frame">
+      <img src="https://images.unsplash.com/photo-1634480257305-7f4ca3582e6a?auto=format&fit=crop&w=1200&q=80" alt="A hairdresser trimming a client's hair in a salon">
+    </div>
+  </div>
+  <div class="swatch-strip"><span class="s1"></span><span class="s2"></span><span class="s3"></span><span class="s4"></span></div>
+</div>
+
+<section class="section-alt">
+  <div class="wrap grid-2">
+    <div>
+      <h2>About Certificate III in Hairdressing</h2>
+    </div>
+    <div>
+      <p>Hairdressing is a hands-on trade, and this course is built the same way. You'll spend your time cutting, colouring, blow-drying and styling, not just reading about it. Alongside the practical work, you'll pick up the client care, hygiene and salon know-how that turns a keen beginner into someone a salon actually wants to hire.</p>
+      <p>The <a href="https://www.pentagonconsultancy.com.au/certificate-iii-in-hairdressing">Certificate III in Hairdressing</a> is designed around real industry standards, so what you learn in the classroom lines up with what happens behind the chair. Whether you're starting fresh or formalising skills you've already picked up on the job, the course gives you a proper, recognised foundation to build your career on.</p>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <h2>How to become a hairdresser</h2>
+    <p style="max-width:64ch;">Most hairdressers follow a similar path into the industry. Here's what that usually looks like, step by step.</p>
+    <div class="steps">
+      <div class="step">
+        <div class="step-num">01</div>
+        <div>
+          <h3>Enrol in a recognised course</h3>
+          <p>Your first move is signing up for a proper qualification. This is where you'll build the foundation, from safe scissor and clipper handling to the basics of hair and scalp science.</p>
+        </div>
+      </div>
+      <div class="step">
+        <div class="step-num">02</div>
+        <div>
+          <h3>Practise the core techniques</h3>
+          <p>Cutting, colouring, foiling and styling all take repetition. You'll work on mannequins and, later, real clients under supervision until each technique feels natural.</p>
+        </div>
+      </div>
+      <div class="step">
+        <div class="step-num">03</div>
+        <div>
+          <h3>Get comfortable with clients</h3>
+          <p>A good hairdresser reads what a client wants and explains what's realistic. Consultation skills and clear communication get built alongside your technical training.</p>
+        </div>
+      </div>
+      <div class="step">
+        <div class="step-num">04</div>
+        <div>
+          <h3>Complete your practical assessments</h3>
+          <p>You'll be assessed on real tasks, not just theory, so you finish the course with a portfolio of work and the confidence that you can actually do the job.</p>
+        </div>
+      </div>
+      <div class="step">
+        <div class="step-num">05</div>
+        <div>
+          <h3>Step into the industry</h3>
+          <p>With your qualification in hand, you're ready to apply for junior stylist roles, apprenticeships or salon assistant positions and keep building your skills from there.</p>
+        </div>
+      </div>
+    </div>
+    <p style="margin-top:20px; max-width:64ch; color:#43393B;">If you're wondering exactly <a href="https://www.pentagonconsultancy.com.au/certificate-iii-in-hairdressing">how to become a hairdresser</a> in a way that employers recognise, this structured, assessed pathway is the most reliable way to get there.</p>
+  </div>
+</section>
+
+<section class="section-alt">
+  <div class="wrap">
+    <h2>What you will learn</h2>
+    <div class="skill-grid">
+      <div class="skill-chip">
+        <div class="skill-dot"></div>
+        <div><h3>Cutting techniques</h3><p>Classic and modern cuts for different hair types, lengths and face shapes.</p></div>
+      </div>
+      <div class="skill-chip">
+        <div class="skill-dot"></div>
+        <div><h3>Colour and foiling</h3><p>Colour theory, application methods and how to correct colour mistakes.</p></div>
+      </div>
+      <div class="skill-chip">
+        <div class="skill-dot"></div>
+        <div><h3>Styling and finishing</h3><p>Blow-drying, straightening, curling and finishing looks for everyday and special occasions.</p></div>
+      </div>
+      <div class="skill-chip">
+        <div class="skill-dot"></div>
+        <div><h3>Hair and scalp care</h3><p>Understanding hair structure, common scalp conditions and treatment options.</p></div>
+      </div>
+      <div class="skill-chip">
+        <div class="skill-dot"></div>
+        <div><h3>Client consultation</h3><p>Asking the right questions and setting realistic expectations before you pick up the scissors.</p></div>
+      </div>
+      <div class="skill-chip">
+        <div class="skill-dot"></div>
+        <div><h3>Salon operations</h3><p>Hygiene, safety, stock handling and the everyday running of a salon floor.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <h2>Course benefits</h2>
+    <div class="grid-3">
+      <div class="feature">
+        <h3>Learn by doing</h3>
+        <p>Most of your time is spent practising real techniques, not sitting through lectures.</p>
+      </div>
+      <div class="feature">
+        <h3>Recognised qualification</h3>
+        <p>Finish with a certificate that salons and employers understand and trust.</p>
+      </div>
+      <div class="feature">
+        <h3>Built-in confidence</h3>
+        <p>By the time you graduate, you'll have handled real client scenarios, not just theory.</p>
+      </div>
+      <div class="feature">
+        <h3>A genuine pathway</h3>
+        <p>The course maps clearly to junior stylist and apprenticeship roles once you finish.</p>
+      </div>
+      <div class="feature">
+        <h3>Supportive trainers</h3>
+        <p>Experienced instructors guide you through techniques and give honest, useful feedback.</p>
+      </div>
+      <div class="feature">
+        <h3>Room to specialise</h3>
+        <p>Once qualified, you can build toward colour specialist, session stylist or salon owner.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="mid-image">
+  <img src="https://images.unsplash.com/photo-1634480258143-ffb5e6df0029?auto=format&fit=crop&w=1200&q=80" alt="A hairdressing student practising a haircut on a client in a training salon">
+</div>
+
+<section class="section-alt">
+  <div class="wrap">
+    <h2>Practical hairdressing skills</h2>
+    <p style="max-width:66ch;">Theory only gets you so far in this trade. That's why the course is weighted heavily toward practical, hands-on work, including:</p>
+    <div class="card-list" style="margin-top:20px;">
+      <div class="card">
+        <p>Sectioning and cutting hair accurately with scissors, clippers and razors across a range of styles.</p>
+      </div>
+      <div class="card">
+        <p>Applying colour, toners and treatments safely, with an eye for timing and even coverage.</p>
+      </div>
+      <div class="card">
+        <p>Styling with heat tools and products to create finished looks that hold and last.</p>
+      </div>
+      <div class="card">
+        <p>Working cleanly and safely, from sterilising tools to managing your time with each client.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <h2>Career opportunities</h2>
+    <div class="career-row">
+      <span class="role">Junior hairdresser</span>
+      <span class="desc">Start building your client base and technique under experienced stylists.</span>
+    </div>
+    <div class="career-row">
+      <span class="role">Salon assistant</span>
+      <span class="desc">Support senior stylists while you get comfortable in a working salon.</span>
+    </div>
+    <div class="career-row">
+      <span class="role">Colour specialist</span>
+      <span class="desc">Focus your skills on colour, balayage and creative colour work.</span>
+    </div>
+    <div class="career-row">
+      <span class="role">Session or freelance stylist</span>
+      <span class="desc">Work on shoots, events and weddings once you've built experience.</span>
+    </div>
+    <div class="career-row">
+      <span class="role">Salon owner</span>
+      <span class="desc">Use your qualification and experience as the foundation for your own business.</span>
+    </div>
+  </div>
+</section>
+
+<section class="section-alt">
+  <div class="wrap">
+    <h2>Who can enrol?</h2>
+    <div class="enrol-grid">
+      <div class="enrol-item">
+        <h3>School leavers</h3>
+        <p>Ready to start a hands-on career straight away, without needing prior experience.</p>
+      </div>
+      <div class="enrol-item">
+        <h3>Career changers</h3>
+        <p>Looking to move into a creative, people-focused trade at any age or stage.</p>
+      </div>
+      <div class="enrol-item">
+        <h3>Salon assistants</h3>
+        <p>Already working in a salon and want a formal qualification behind your skills.</p>
+      </div>
+      <div class="enrol-item">
+        <h3>Anyone keen to learn</h3>
+        <p>No specific background is required, just a genuine interest in hair and people.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <h2>Why choose us?</h2>
+    <div class="why-grid">
+      <div class="why-item">
+        <div class="why-num">01</div>
+        <h3>Practical focus</h3>
+        <p>Real tools, real techniques, from your first session onward.</p>
+      </div>
+      <div class="why-item">
+        <div class="why-num">02</div>
+        <h3>Experienced trainers</h3>
+        <p>Learn from people who've actually worked behind the chair.</p>
+      </div>
+      <div class="why-item">
+        <div class="why-num">03</div>
+        <h3>Small class support</h3>
+        <p>More one-on-one time to fix technique and build confidence.</p>
+      </div>
+      <div class="why-item">
+        <div class="why-num">04</div>
+        <h3>Career guidance</h3>
+        <p>Support finding your feet in the industry after you graduate.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="contact">
+  <div class="wrap contact-grid">
+    <div>
+      <h2>Contact us</h2>
+      <p class="lede">Have questions about the course, entry requirements or study options? Our team is happy to walk you through everything before you enrol.</p>
+      <a class="cta-btn" href="https://www.pentagonconsultancy.com.au/contact-us">Contact Us Today</a>
+    </div>
+  </div>
+</section>
+
+<footer>
+</footer>
+
+</body>
+</html>
